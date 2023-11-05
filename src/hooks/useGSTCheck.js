@@ -16,7 +16,7 @@ export function useGSTCheck(showSnackbar) {
     setIsLoading(true);
     try {
       const response = await fetch(
-        `https://sheet.gstincheck.co.in/check/6f101936cedee13e48a02facfd8eca95/${gstNumber}`
+        `https://sheet.gstincheck.co.in/check/95b1084a1ffafd6669a7ca59cc88a1bb/${gstNumber}`
       );
       const data = await response.json();
       setIsGSTValid(data.flag);
