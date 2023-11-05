@@ -36,7 +36,7 @@ export default function OTPVerification() {
   const handleFormSubmit = (event) => {
     event.preventDefault();
     if (handleSubmit(event)) {
-      showSnackbar("OTP verified successfully!");
+      showSnackbar("Invoice uploaded successfully");
       setTimeout(() => {
         navigate("/");
       }, 2000);

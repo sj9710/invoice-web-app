@@ -67,7 +67,7 @@ export default function InvoiceUpload() {
     event.preventDefault();
     setIsSubmitted(true);
     if (validateForm()) {
-      showSnackbar("Invoice uploaded successfully");
+      showSnackbar("Submitting form ....");
       setTimeout(() => {
         navigate("/otp-verification");
       }, 2000);
